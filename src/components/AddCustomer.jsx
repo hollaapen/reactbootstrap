@@ -46,6 +46,7 @@ export default function AddCustomer(props) {
               <div></div>
               <div>
                 <input
+                  className="form-control"
                   id="name"
                   placeholder="Name"
                   type="text"
@@ -60,6 +61,7 @@ export default function AddCustomer(props) {
               <div></div>
               <div className="md:w-2/3">
                 <input
+                  className="form-control mt-2 mb-2"
                   id="industry"
                   placeholder="Industry"
                   type="text"
@@ -70,7 +72,7 @@ export default function AddCustomer(props) {
                 />
               </div>
             </div>
-            <input type="submit" />
+            <Button variant="success">Save</Button>
           </form>
         </Modal.Body>
         <Modal.Footer>

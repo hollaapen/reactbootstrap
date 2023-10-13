@@ -3,12 +3,14 @@ import { useEffect, useState } from "react";
 import { baseUrl } from "../shared";
 import Button from "react-bootstrap/Button";
 import Modal from "react-bootstrap/Modal";
+import EditCustomer from "./EditCustomer";
 
 export default function Customer() {
   const [show, setShow] = useState(false);
 
   const handleClose = () => setShow(false);
   const handleShow = () => setShow(true);
+  const handleSho = () => setShow(true);
   const { id } = useParams();
 
   const navigate = useNavigate();
@@ -87,6 +89,10 @@ export default function Customer() {
               </Button>
             </Modal.Footer>
           </Modal>
+
+          <br />
+          <br />
+          <EditCustomer />
         </div>
       ) : null}
       <br />
